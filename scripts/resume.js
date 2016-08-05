@@ -61,6 +61,19 @@ $(document).ready(function() {
        nextTable.fadeIn(600).addClass('active-table');
        
    });
+   
+   $('.prev').click( function() {
+       var currentTable = $('.active-table');
+       var prevTable = currentTable.prev();
+       
+       if(prevTable.length === 0) {
+           prevTable = $('.table').last();
+       }
+       
+       currentTable.fadeOut(500).removeClass('active-table');
+       prevTable.fadeIn(600).addClass('active-table');
+       
+   });
        
 });
 
