@@ -26,17 +26,19 @@ html {
 body {
     min-height: 100%;
     min-width: 100%;
-    background: url(../images/main-bg.jpg) no-repeat center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    z-index: 100;
     font-family: 'Roboto', sans-serif;
     color: black;
     font-size: 16px;
     font-weight: 300;
     position: relative;
+}
+
+.parallex {
+    background: url(../images/main-bg.jpg) no-repeat center;
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: -1;
 }
 
 .logo-box {
@@ -79,6 +81,7 @@ body {
 }
 
 .content-container {
+    position: relative;
     width: 50%;
     margin: auto;
     padding: 40px;

@@ -14,6 +14,14 @@ $(document).ready(function() {
 
   });
   
+  
+  function parallex() {
+    var ypos = window.pageYOffset;
+    var image= document.getElementsByClassName("parallex");
+    image.style.top = ypos * 0.4 + "px";
+  }
+  window.addEventListener("scroll", parallex);
+  
 var prev = 0;
 var $window = $(window);
 var nav = $('.header');
