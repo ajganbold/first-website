@@ -124,6 +124,12 @@ html {
   .hero .instruction {
     color: #f26964; }
 
+.work-title {
+  font-size: 36px;
+  font-weight: 100;
+  color: #b6b6b6;
+  text-align: center; }
+
 .alfa {
   background: url(../images/after.png) center center no-repeat;
   background-size: cover;
