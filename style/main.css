@@ -522,14 +522,14 @@ ul {
 /* ************************************* */
 /* 6.0 Experiments ========= */
 #experiments {
-  margin-top: 90px;
+  margin-top: 10px;
   padding: 80px 0 50px; }
   #experiments p {
     margin-left: 0px; }
 
 .experiments_title {
   width: 70%;
-  margin: 0px 0 -200px -180px;
+  margin: 0px 0 -140px -180px;
   overflow: hidden; }
 
 @media screen and (max-width: 768px) {
