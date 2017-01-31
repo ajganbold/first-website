@@ -526,6 +526,9 @@ ul {
   padding: 80px 0 50px; }
   #experiments p {
     margin-left: 0px; }
+  #experiments ul li {
+    width: 33%;
+    float: left; }
 
 .experiments_title {
   width: 70%;
