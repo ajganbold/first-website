@@ -169,6 +169,15 @@ ul {
     overflow: hidden;
 }
 
+.headshot {
+    margin-bottom: -100px;
+    margin-top: -100px;
+    margin-left: 150px;
+    img {
+        max-width: 200px;
+    }
+}
+
 /* ************************************* */
 /* 5.0 Work ========= */
 #work {
@@ -233,6 +242,11 @@ ul {
         margin: 0 0 -75px 0px;
     }
     
+    .headshot {
+        margin-top: 0;
+        margin-left: 150px;
+    }
+    
     #work {
         padding: 80px 0 50px;
         p {
@@ -263,6 +277,12 @@ ul {
         background-repeat: repeat-y;
         background-position: center;
         background-color: $bg-color;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .headshot {
+        margin-left: 100px;
     }
 }
 

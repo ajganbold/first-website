@@ -502,6 +502,13 @@ ul {
   margin: 0 0 -85px 230px;
   overflow: hidden; }
 
+.headshot {
+  margin-bottom: -100px;
+  margin-top: -100px;
+  margin-left: 150px; }
+  .headshot img {
+    max-width: 200px; }
+
 /* ************************************* */
 /* 5.0 Work ========= */
 #work {
@@ -550,6 +557,10 @@ ul {
     width: 80%;
     margin: 0 0 -75px 0px; }
 
+  .headshot {
+    margin-top: 0;
+    margin-left: 150px; }
+
   #work {
     padding: 80px 0 50px; }
     #work p {
@@ -573,6 +584,9 @@ ul {
     background-repeat: repeat-y;
     background-position: center;
     background-color: #ECF3F3; } }
+@media screen and (max-width: 820px) {
+  .headshot {
+    margin-left: 100px; } }
 @media screen and (max-width: 560px) {
   .contact_title {
     width: 100%;
