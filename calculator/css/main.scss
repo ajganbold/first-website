@@ -1,0 +1,87 @@
+@import "sass/colors.scss";
+@import "sass/normalize.scss";
+@import "sass/container.scss";
+@import "sass/mixins.scss";
+
+body {
+    font-family: 'Fira Sans', sans-serif;
+    background-color: $bg-blue;
+    height: 100%;
+    position: relative;
+}
+
+#calculator {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -225px;
+    margin-left: -165px;
+    background-color: $dark-gray;
+    width: 330px;
+    height: 450px;
+    padding: 5px 0 5px 5px;
+    font-size: 46px;
+    -webkit-box-shadow: 1px -2px 43px -6px rgba(43,114,128,1);
+   -moz-box-shadow: 1px -2px 43px -6px rgba(43,114,128,1);
+    box-shadow: 1px -2px 43px -6px rgba(43,114,128,1);
+}
+
+.calculation{
+    height: 80px;
+    width: 100%;
+    background-color: $almost-black;
+    color: $gray;
+    text-align: right;
+    padding: 10px 30px;
+    overflow: hidden;
+}
+
+.answer {
+    height: 80px;
+    width: 100%;
+    background-color: $light-black;
+    font-size: 46px;
+    color: white;
+    text-align: right;
+    padding: 10px 30px;
+    overflow: hidden;
+}
+
+button {
+    width: 70px;
+    height: 70px;
+    border: none;
+    background: none;
+    color: white;
+    font-size: 36px;
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.equals {
+    background-color: $accent-red;
+}
+
+.operator, #clearall {
+    color: $bg-blue;
+}
+
+.footer {
+    color: $dark-gray;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 60px;
+    a{
+        color: $almost-black;
+        text-decoration: none;
+        &:hover{
+            color: $dark-gray;
+        }
+    }
+}
+
+
+
+
+

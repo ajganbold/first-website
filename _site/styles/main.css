@@ -1,0 +1,423 @@
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+    min-height: 100%;
+    font-size: 100%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    min-height: 100%;
+    margin: auto;
+    max-width: 94rem;
+    
+}
+
+.main-header {
+    background-image: url(../images/header.bj.jpg);
+    background-size: cover;
+    background-position: center center;
+    padding-bottom: 70px;
+}
+
+.logo {
+    height: 50px;
+    float: left;
+    margin-left: 30px;
+    margin-top: 30px;
+    z-index: 200;
+}
+
+.show {
+    display: block;
+}
+
+.nav {
+    margin-top: 35px;
+    margin-right: 20px;
+    float: right;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.nav-link a {
+    display: inline-block;
+    margin-right: 20px;
+    color: rgba(0,0,0,0.5);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.hide-nav {
+    display: none;
+}
+
+.navbar-list:hover {
+    text-decoration: none;
+    color: rgba(0,0,0,0.1);
+}
+
+
+.head {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 64px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    color: white;
+    clear: both;
+    padding-top: 60px;
+}
+
+.head span {
+    display: inline-block;
+    padding: 0.2em 0.5em;
+    border: 8px white solid ;
+}
+
+.kicker {
+    font-size: 14px;
+    text-align: center;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.about-container {
+    padding-bottom: 70px;
+    background-color: #cad6d7;
+    padding-top: 30px;
+    color: black;
+    text-align: center;
+}
+
+
+.main-para {
+    padding-top: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+
+
+.skill-lockup {
+    max-width: 450px;
+    display: inline-block;
+    padding-top: 30px;
+}
+
+.skill-label {
+    padding-bottom: 4px;
+}
+.skill-unit {
+    width: 180px;
+    float: left;
+    margin-left: 20px;
+    padding-bottom: 25px;
+    padding-left: 25px;
+    text-align: left;
+}
+
+.skill-icons {
+    font-size: 0;
+}
+
+.skill-icons span {
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+    background-color: #779fb8;
+    border-radius: 50%;
+    margin-right: 3px;
+}
+
+.skill-8 span:nth-child(n+8) {
+    background-color: white;
+}
+
+.skill-9 span:nth-child(n+9) {
+    background-color: white;
+}
+
+.skill-11 span:nth-child(n+11) {
+    background-color: white;
+}
+
+.skill-7 span:nth-child(n+7) {
+    background-color: white;
+}
+
+.skill-4 span:nth-child(n+3) {
+    background-color: white;
+}
+.link-link {
+    padding-bottom: 10px;
+}
+
+.about-link {
+    display: inline-block;
+    clear: both;
+    padding: 10px 30px;
+    background-color: white;
+    font-weight: bold;
+    color: #779fb8;
+}
+
+.see-more:hover {
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+
+.work-container {
+    padding-bottom: 70px;
+    background-color: #e56295;
+    padding-top: 30px;
+    color: black;
+    text-align: center;
+}
+
+.work-link {
+    display: inline-block;
+    clear: both;
+    padding: 10px 30px;
+    background-color: white;
+    font-weight: bold;
+    color: #e56295;
+}
+
+.articles-container {
+    padding-bottom: 70px;
+    background-color: #efefef;
+    padding-top: 30px;
+    color: black;
+    text-align: center;
+}
+
+.articles-link {
+    display: inline-block;
+    clear: both;
+    padding: 10px 30px;
+    background-color: #e24040;
+    font-weight: bold;
+    color: #efefef;
+}
+
+.picture-container {
+    padding: 20px;
+}
+
+.pictures {
+    display: inline-block;
+    width: 160px;
+    height: 240px;
+}
+
+.is-emph{
+    animation-name: tada;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.alchemist {
+    background-image: url(../images/alchemist.jpg);
+}
+
+.harrypotter {
+    background-image: url(../images/harrypotter.jpg);
+}
+.stevejobs {
+    background-image: url(../images/stevejobs.jpg);
+}
+
+.franklin {
+    background-image: url(../images/franklin.jpg);
+}
+
+.contact-container {
+    min-height: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e24040;
+    transition: background 150ms ease-in-out;
+}
+
+.contact-container:hover {
+    background-color: red;
+}
+
+.email-link {
+    text-decoration: none;
+    color: white;
+    font-size: 36px;
+}
+
+.email-link:hover {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+.email-address {
+    padding: 10px 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.footer-wrap {
+    float: left;
+    width: 100%;
+    background-color: #88afca ;
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    color: white;
+}
+
+.footer-p {
+    padding-top: 20px;
+    margin-left: 20px;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
+}
+
+
+
+
+
+@media screen and (max-width: 569px) {
+    
+    .hide-nav {
+        display: block;
+    }
+    
+   .nav {
+       display: none;
+    }
+    
+    .logo {
+        z-index: 200;
+    }
+    
+    #menu-link {
+        position: absolute;
+        width: 100%;
+        margin-top: 35px;
+        text-align: right;
+        padding-right: 30px;
+        text-transform: uppercase;
+        z-index: 100;
+    }
+
+
+    .dropdown-content {
+        margin-top: 20px;
+        width: 100%;
+        display: none;
+        position: absolute;
+        text-align: center;
+        background-color: white;
+    }
+    
+    .navbar-list {
+        display: block;
+        width: 100%;
+        padding: 10px;
+    }
+    
+    
+    .head {
+        font-size: 4rem;
+        padding-top: 40px;
+    }
+    
+    .email-link {
+        font-size: 24px;
+    }
+    
+}
+
+
+
+
+
+
+
+
+@media (min-width: 570px) and (max-width: 640px) {
+    
+}
+
+
+
+
+
+@media (min-width: 640px) and (max-width: 1024px){
+}
+
+
+@keyframes tada {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  10%, 20% {
+    transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+  }
+
+  30%, 50%, 70%, 90% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+
+  40%, 60%, 80% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
