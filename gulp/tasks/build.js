@@ -11,8 +11,7 @@ gulp.task("deleteDistFolder", function(){
     "./js",
     "./index.html",
     "./assets",
-    "./extra-experiments",
-    "./articles"
+    "./templates"
   ]
   
   return del(pathsToDelete);
@@ -27,10 +26,8 @@ gulp.task("copyGeneralFiles", ["deleteDistFolder"], function(){
     "!./app/assets/scripts/**",
     "!./app/temp",
     "!./app/temp/**",
-    "!./app/extra-experiments",
-    "!./app/extra-experiments/**",
     "!./app/articles",
-    "!./app/articles/**"
+    "!./app/articles/**",
   ]
 
   return gulp.src(pathsToCopy)
