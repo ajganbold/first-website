@@ -7,7 +7,7 @@ var rev = require("gulp-rev");
 var uglify = require("gulp-uglify");
 
 gulp.task("deleteDistFolder", function(){
-  return del("./");
+  return del("./docs");
 });
 
 gulp.task("optimizeImages", ["deleteDistFolder"], function() {
