@@ -1,9 +1,15 @@
-/*global $ */
+/*global $*/
+
+/* PRELOADER */
+$(window).ready(function() {
+    $('#loading').hide();
+});
 
 $(document).ready(function() {
-  
-  
-  $('.hamburger').click( function(event){
+   /**
+   * Drop Down Menu
+   */
+    $('.hamburger').click( function(event){
         event.stopPropagation();
         $('.drop-menu').toggle();
     });
@@ -11,30 +17,42 @@ $(document).ready(function() {
     $(document).click( function(){
         $('.drop-menu').hide();
     });
-
-  });
-  
-var prev = 0;
-var $window = $(window);
-var nav = $('.header');
-
-$window.on('scroll', function(){
-  var scrollTop = $window.scrollTop();
-  nav.toggleClass('hidden', scrollTop > prev);
-  prev = scrollTop;
+    
+    /**
+    * Fancybox
+    */
+    $(".fancybox").fancybox();
 });
 
-$(window).scroll(function() {
-    showLinks();
-  });
-  
-  function showLinks() {
-    var wScroll = $(window).scrollTop();
-  if($('.about-container').offset().top - $(window).height() / 3 < wScroll) {
-      $('.thumbs').each(function(i){
-        setTimeout(function() {
-          $('.thumbs').eq(i).addClass('visible');
-        }, 100 * i);
-      });
+
+/**
+* Window scroll effects
+*/
+$(window).scroll(function(){   
+    /**
+    * Menu show after scroll
+    */
+    if ($(this).scrollTop() > 200) {
+        $('#menu').fadeIn(400);
+    } else {
+        $('#menu').fadeOut(400);
     }
-  }
+    
+    /**
+    * Scroll slow effect to #packages
+    */
+    $("#to-top").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#packages").offset().top
+        }, 2000);
+    });
+    
+    /**
+    * Scroll slow effect to #booking
+    */
+    $(".scroll-to").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#booking").offset().top
+        }, 2000);
+    });
+});

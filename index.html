@@ -1,18 +1,22 @@
 <!DOCTYPE html>
-<html lang="en-us" ng-app="jagaWebDevTemplate">
+<html lang="en-us">
 <head>
 	<meta charset="utf-8" http-equiv="Content-Type" content="text/html">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Front End Web Developer in Chicago area 
-	                                    who likes to code, design and create.">
-
+	<meta name="description" content="">
 	<!--GOOGLE FONTS-->
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Chewy|Roboto:400,700" rel="stylesheet">
 
 	<!--ICONS-->
 	<link rel="stylesheet" type="text/css" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 
-	<title>JagaWebDev</title>
+	<title>Jaga</title>
+    <link rel="shortcut icon" href="img/jaga-logo.png" />
+	<!--BOOTSTRAP CORE CSS-->
+	<link rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+        integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+	crossorigin="anonymous">
 
 	<!-- HTML5 shiv and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!--[if lt IE 9]>
@@ -21,41 +25,84 @@
 	<![endif]-->
 
 	<!--custom css-->
-	<link rel="stylesheet" href="assets/styles/styles-2235ecc977.css"/>
+	<link rel="stylesheet" type="text/css" href="main.css">
+
 </head>
 
 <body>
-    <header class="header">
-        <div class="navbar">
-            <a href="#/about" class="nav-link">about</a>
-            <a href="#/work" class="nav-link">work</a>
-            <a href="#/experiments" class="nav-link">experiments</a>
-            <!--<a href="#/contact" class="nav-link">contact</a>-->
-        </div>
-        
-        <a href="#">
-            <div onclick="myFunction()"  class="hamburger ion-android-menu">
-                <div class="drop-menu">
-                    <ul class="drop-ul">
-                        <a href="#/about" class="drop-link"><li class="drop-li">about</li></a>
-                        <a href="#/resume" class="drop-link"><li class="drop-li">resume</li></a>
-                        <a href="#/work" class="drop-link"><li class="drop-li">work</li></a>
-                        <a href="#/experiments" class="drop-link hide"><li class="drop-li">experiments</li></a>
-                        <!--<a href="#/contact" class="drop-link"><li class="drop-li">Contact</li></a>-->
-                    </ul>
+    <div class="body-container">
+        <div class="container">
+<!-- JAGA SECTION  -->
+            <div class="row section-padding top-padding">
+                <div class="col-sm-8 col-sm-offset-3 col-xs-11">
+                	<img class="jaga_title" src="img/jaga_title.png">
+                    <section id="jaga" class="box-shadow">
+                        <div class="row">
+                        	<div class="col-sm-8 col-xs-8 col-xs-offset-2">
+	                        	<p class="text-space">
+									To bring a website to life it takes a slight
+					                touch and a lot of easing curve adjustments but it's worth every refinement.
+					                I code, I design, I build and I love doing it all at the same time.
+	                    		</p>
+	                    	</div>
+                        </div>
+                    </section>
                 </div>
-           </div>
-       </a>
-    </header> 
-	<!-- ANGULAR-- DISPLAYS DIFFERENT TEMPLATES ACCORDINGLY =============== -->
-	<div ng-view autoscroll="true"></div>
-	<footer><p>Made with love by Jaga</p></footer>
-	
+            </div>
+
+<!-- RESUME SECTION  -->
+            <div class="row section-padding">
+                <div class="col-sm-8 col-sm-offset-1 col-xs-11 col-xs-offset-1">
+                	<img class="resume_title" src="img/work_title.png">
+                    <section id="resume" class="box-shadow">
+                        <div class="row">
+													<div class="col-sm-12 col-xs-12 col-md-12">
+	                        	<p class="text-space">
+															My skills are self-taught and widely practiced
+															in every project I work on.</p>
+	                        </div>
+												</div>
+                    </section>
+										<div class="row">
+                        <div class="col-sm-6 col-sm-offset-6 col-md-5 col-md-offset-7 col-xs-9 col-xs-offset-2 post-note text-space">
+                            <p><b>+ Sample works</b>
+                                <ul>
+                                     <li><a href="http://anyashousecleaning.com/" target="_blank">Anya's House Cleaning</a></li>
+                                     <li><a href="http://www.aplusnailschool.com" target="_blank">A+ Nail School</a></li>
+																		 <li><a href="http://armitagest.com/" target="_blank">Armitage Street</a></li>
+																		 <li><a href="https://www.cleanteethchicago.com/" target="_blank">Clean Teetch Chicago</a></li>
+																		 <li><a href="https://montalinternational.com/" target="_blank">Montal International</a></li>
+																		 <li><a href="https://tlsfourseasons.com/" target="_blank">TL's Four Seasons</a></li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- <a href="resume_jaga.pdf" target="_black"><button class="resume_btn pull-right">View Full Resume<div class="pull-right icon"><img src="img/arrow.svg"/></div></button></a> -->
+                </div>
+            </div>
+
+<!-- CONTACT SECTION  -->
+            <div class="row section-padding">
+                <div class="col-sm-7 col-sm-offset-3 col-xs-12">
+                	<img class="contact_title" src="img/contact_title.png">
+                    <section id="contact" class="box-shadow text-center">
+                        <div class="row">
+                            <a href="mailto:jagawebdev@gmail.com"><div class="col-sm-2 col-sm-offset-4 link"><ion-icon name="mail"></ion-icon></div></a>
+                            <a href="https://www.linkedin.com/in/ariunjargal" target="_black"><div class="col-sm-2 link"><ion-icon name="logo-linkedin"></ion-icon></div></a>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
 	<!-- THIRD PARTY JS-->
+	<script src="https://unpkg.com/ionicons@4.2.2/dist/ionicons.js"></script>
 	<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-route.js"></script>
-	<script src="js/main-d9a68ec35d.js"></script>
-	<script src="js/app-2ec9588389.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+	integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+	<!-- application scripts -->
+	<script src="js/main.js" type="text/javascript"></script>
 </body>
 </html>
