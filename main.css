@@ -465,12 +465,12 @@ ul {
 /* ************************************* */
 /* 2.0 Contact ========= */
 #contact {
-  font-size: 40px;
+  color:#ebebeb;
   padding: 80px 0; }
 
 .contact_title {
   width: 100%;
-  margin: 0 0 -95px 200px;
+  margin: 0 0 -95px 0px;
   overflow: hidden; }
 
 /* ************************************* */
